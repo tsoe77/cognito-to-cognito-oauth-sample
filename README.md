@@ -57,6 +57,35 @@ app2 = {
 }
 ```
 
+As of creation:
+
+```
+$ tfsec .
+
+  times
+  ------------------------------------------
+  disk i/o             1.524124ms
+  parsing HCL          11.626µs
+  evaluating values    918.416µs
+  running checks       5.421542ms
+
+  counts
+  ------------------------------------------
+  files loaded         4
+  blocks               19
+  modules              0
+
+  results
+  ------------------------------------------
+  critical             0
+  high                 0
+  medium               0
+  low                  0
+  ignored              0
+
+No problems detected!
+```
+
 ## Web Apps
 
 Two webs are created for demonstration purposes only. They are in the `webapps` directory. You need to configure the Cognito details in the `webapps/app1/src/main.js` and `webapps/app2/src/main.js` for it to work.
