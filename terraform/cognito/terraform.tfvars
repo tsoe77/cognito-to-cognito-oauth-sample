@@ -1,0 +1,7 @@
+aws_region          = "eu-west-1"
+app1_user_pool_name = "app1"
+app1_domain_name    = "app1auth"
+app2_user_pool_name = "app2"
+app2_domain_name    = "app2auth"
+provider_name       = "app1"
+provider_type       = "OIDC"
