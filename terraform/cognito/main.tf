@@ -58,6 +58,8 @@ resource "aws_cognito_user_pool_client" "app2_client1" {
   logout_urls                   = ["http://localhost:8002"]
   prevent_user_existence_errors = "ENABLED"
   supported_identity_providers  = [var.provider_name, "COGNITO"]
+
+  depends_on = [aws_cognito_identity_provider.app2_provider]
 }
 
 # app2 Integration
